@@ -1,4 +1,4 @@
-﻿body {
+body {
   font-family: Arial, sans-serif;
   margin: 0;
 }
@@ -11,6 +11,13 @@ ul {
 ul li {
   display: inline-block;
   margin-right: 10px;
+}
+
+/* Added text adjustment properties */
+.section p {
+  max-width: 100%; /* Limiting text width */
+  word-wrap: break-word; /* Allowing word-wrap for long words */
+  overflow-wrap: break-word; /* Handling word wrap for newer browsers */
 }
 
 .section {
