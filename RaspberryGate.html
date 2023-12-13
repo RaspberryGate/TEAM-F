@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,6 +11,24 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            max-width: 297mm; /* A3 width */
+            margin: auto;
+            border: 10px solid #333; /* Border style */
+            border-radius: 0; /* Sharp corners */
+            background-image: url('file:///C:/Users/redca/Downloads/Website%20Images/Raspbckg.png'); /* Replace 'your-background-image.jpg' with the path to your image */
+            background-size: cover;
+        }
+
+        main {
+            padding: 20px;
+            background-color: white; /* Set the background color inside the border */
+        }
+
+        main img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
         }
 
         header {
@@ -42,8 +60,30 @@
         nav ul li a:hover {
             background-color: #ddd;
         }
-        main {
-            padding: 20px;
+
+        nav ul li a:visited,
+        nav ul li a:active {
+            background-color: transparent; /* Set the background color to transparent for visited and active states */
+        }
+
+        section {
+            text-align: center;
+        }
+
+        section p a {
+            color: black; /* Set the color for the links inside the sections */
+            text-decoration: none; /* Remove underline on hover */
+        }
+
+        section p a:hover {
+            text-decoration: none; /* Remove underline on hover */
+        }
+
+        section img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
         }
 
         footer {
@@ -51,6 +91,11 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
+        }
+
+        footer a {
+            color: #fff; /* Set the color for the link inside the footer */
+            text-decoration: none;
         }
     </style>
 </head>
@@ -63,51 +108,54 @@
     <nav>
         <ul>
             <li><a href="#section1">About</a></li>
-            <li><a href="#section2">blanko</a></li>
-            <li><a href="#section3">way ko kabalo</a></li>
-	    <li><a href="#section4">TEAM F Members</a></li>
-
+            <li><a href="#section2">Objectives</a></li>
+            <li><a href="#section3">Documentation</a></li>
+            <li><a href="#section4">Our Team</a></li>
+            <li><a href="#section5">Attendance Sheet</a></li>
         </ul>
     </nav>
 
     <main>
+        <img src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=700&quality=85&auto=format&fit=max&s=fa2a6e634973defc13bfcbae1b8e954d" alt="Description of the image">
         <section id="section1">
             <h2>About</h2>
-            <p> The Raspberry Gate is the new bla bla bal........</p>
+            <p>In the contemporary era of rapid societal and technological changes, global incorporation</p>
+            <p>of technology, particularly employee monitoring tools, is recognized for optimizing operations</p>
+            <!-- ... (rest of the content) ... -->
         </section>
 
-        <section id="section2">
-            <h2>Objectives</h2>
-            <p>Our aims is to bla bla bla......</p>
-
-        </section>
-	<section id="section3">
-            <h2>Extra</h2>
-            <p>basi kilanlan</p>
-        </section>
-
+        <!-- ... (rest of the sections) ... -->
         <section id="section4">
-            <h2>TEAM F Members</h2>
-            <p><b>Project Manager</b>
-            <p>Adrian john Banias</p>
-	    <p></>
-            <p><b>Developers</b></p>
-            <p>Carl James Ticzon</p>
-            <p>Chedrick Jamayo</p>
-            <p>Francis Emil Vista</p>
-	    <p>Mark John Agocejos</p>
-	    <p></p>
-            <p><b>Researchers</b></p>
-            <p>Erick Miguel Servano</p>
-            <p>Kaye Landero</p>
-            <p>Lee Ann Penuela</p>
-            <p>Patrick Paul Porras</p>
-            
+            <h2>Our Team</h2>
+            <div style="display: flex; justify-content: space-around;">
+                <div style="flex: 1;">
+                    <p><b>Project Manager</b></p>
+                    <p><a href="https://web.facebook.com/adrian.berja.9" target="_blank">Adrian John Banias</a></p>
+                </div>
+        
+                <div style="flex: 1;">
+                    <p><b>Developers</b></p>
+                    <p><a href="https://web.facebook.com/carljamesticzon797979" target="_blank">Carl James Ticzon</a></p>
+                    <p><a href="https://web.facebook.com/Cheeeeeriiiiiick" target="_blank">Chedrick Jamayo</a></p>
+                    <p><a href="https://web.facebook.com/francisemil.cvista" target="_blank">Francis Emil Vista</a></p>
+                    <p><a href="https://web.facebook.com/mj.agocejos" target="_blank">Mark John Agocejos</a></p>
+                </div>
+        
+                <div style="flex: 1;">
+                    <p><b>Researchers</b></p>
+                    <p><a href="https://web.facebook.com/erickflew" target="_blank">Erick Miguel Servano</a></p>
+                    <p><a href="https://web.facebook.com/profile.php?id=100009295917412" target="_blank">Kaye Landero</a></p>
+                    <p><a href="https://web.facebook.com/leeanne.penuela.5" target="_blank">Lee Ann Penuela</a></p>
+                    <p><a href="https://web.facebook.com/titopatwikk" target="_blank">Patrick Paul Porras</a></p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-
+        <section id="section5">
+            <h2><a href="https://drive.google.com/drive/folders/13pkftYwXGm0K-rkXNxpLK1G8lKIG4_iF?usp=drive_link" target="_blank">Attendance Sheet</a></h2>
+        </section>
     </footer>
 </body>
 
