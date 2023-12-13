@@ -170,6 +170,18 @@
             <h2><a href="https://drive.google.com/drive/folders/13pkftYwXGm0K-rkXNxpLK1G8lKIG4_iF?usp=drive_link" target="_blank">Attendance Sheet</a></h2>
         </section>
     </footer>
+    <script>
+        window.onload = function () {
+            if (!window.location.hash) {
+                window.location = window.location + '#loaded';
+                window.location.reload();
+            } else {
+                setTimeout(function () {
+                    window.scrollTo(0, 0);
+                }, 0);
+            }
+        };
+    </script>
 </body>
 
 </html>
