@@ -64,3 +64,11 @@ a:hover {
   word-wrap: break-word; /* Allowing word-wrap for long words */
   overflow-wrap: break-word; /* Handling word wrap for newer browsers */
 }
+ul {
+  list-style-type: disc; /* Default bullet style */
+  padding-left: 20px; /* Adjust the overall left padding */
+}
+
+li {
+  margin-left: -15px; /* Negative margin to bring bullets closer to text */
+}
