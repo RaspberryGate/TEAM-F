@@ -103,6 +103,44 @@
             width: 75%;
             margin: 0 auto;
         }
+	.justified-space{
+	padding-left: 20px;
+	text-align: justify;
+            width: 75%;
+            margin: 0 auto;
+	.spaced-element {
+    width: 75%;
+    margin: 0 auto; /* Centers the element horizontally */
+    text-align: justify;
+    padding: 10px; /* Add padding for space inside the element */
+	ul {
+  list-style-type: disc; /* Default bullet style */
+  padding-left: 20px; /* Adjust the overall left padding */
+}
+
+li {
+  margin-left: -15px; /* Negative margin to bring bullets closer to text */
+}
+.custom-bullet {
+  list-style-image: url('line-bullet.png'); /* Replace 'line-bullet.png' with your image */
+  padding-left: 20px; /* Adjust the padding to position text */
+}
+.custom-bullets {
+  list-style-image: url('line-bullet.png'); /* Replace 'line-bullet.png' with your image */
+  padding-left: 40px; /* Adjust the padding to position text */
+}
+.space {
+    height: 50px; /* Adjust the height for the desired space */
+    margin: 0; /* Reset any default margin */
+    padding: 0; /* Reset any default padding */
+}
+.space2 {
+    height: 100px; /* Adjust the height for the desired space */
+    margin: 0; /* Reset any default margin */
+    padding: 0; /* Reset any default padding */
+}
+}
+
     </style>
 </head>
 
@@ -115,7 +153,7 @@
         <ul>
             <li><a href="#section1">About</a></li>
             <li><a href="#section2">Objectives</a></li>
-            <li><a href="#section3">User Documentation</a></li>
+            <li><a href="#section3">Documentation</a></li>
             <li><a href="#section4">Mission</a></li>
             <li><a href="#section5">Vision</a></li>
             <li><a href="#section6">Our Team</a></li>
@@ -147,7 +185,92 @@
                     </div>
                     </section>
         <section id="section3">
-            <h2>User Documentation</h2>
+            <h2>Documentation</h2>
+            <p><b>Raspberry Gate User Manual</b></p>
+
+<p class="justified-width"><b>1. Introduction:</b>
+<ul class="custom-bullet">
+<p class="justified-space">Welcome to Raspberry Gate, a smart attendance system designed to simplify the process of tracking attendance using RFID cards. This user manual will guide you through the setup, usage, and maintenance of the Raspberry Gate system.</p>
+</ul>
+<p class="space"></p>
+<p class="justified-width"><b>2. Components:</p></b>
+<ul class="custom-bullet">
+<p class="justified-space"><b>Raspberry Pi 3B</b>: The central computing unit that runs the Raspberry Gate script and manages the entire system. It processes data from the RFID card reader, controls the LCD display, and handles attendance logging and exporting.</p>
+<p class="space"></p>
+<p class="justified-space"><b>RFID Card Reader</b>: Reads data from RFID (Radio-Frequency Identification) cards. Each card is associated with a unique identifier that is used to authenticate users. When a card is tapped, the RFID card reader sends the card's unique identifier to the Raspberry Pi for processing.</p>
+<p class="space"></p>
+<p class="justified-space"><b>I2C-enabled LCD Display</b>: Provides a visual interface for users and displays relevant information such as user names, access status (granted/denied), and timestamps. It enhances the user experience by communicating real-time interactions and system responses.</p>
+<p class="space"></p>
+<p class="justified-space"><b>Internet Connection</b>: Essential for connecting the Raspberry Pi to the internet. The internet connection is crucial for two main purposes: authenticating with Google Drive for attendance export and ensuring the system has accurate timekeeping for timestamping attendance entries.</p>
+<p class="space"></p>
+<p class="justified-space"><b>Google Drive</b>: Used as a cloud storage platform for exporting attendance data. The system utilizes the PyDrive library to authenticate with Google Drive and upload attendance sheets periodically or manually triggered.</p>
+<p class="space"></p>
+<p class="justified-space"><b>Desktop (File Storage)</b>: The system creates a folder named "Raspberrygate" on the user's desktop (or a specified location) to store exported attendance sheets as text files. This local storage ensures a backup of attendance data in addition to the cloud-based storage on Google Drive.</p>
+<p class="space"></p>
+</ul>
+<p class="justified-width"><b>3. Assembly</b>:</p>
+<p class="space"></p>
+<ul class="custom-bullet">
+<p class="justified-space"><b>Circuit connection</b>:</p>
+<ul class="custom-bullet">
+	<p class="justified-space2"><p class="justified-space"><b>RFID IC ID Card Reader</b>:
+<ul class="custom-bullet">
+	<p class="justified-space">-Plug the USB connector of the RFID IC ID Card Reader into an available USB port on the Raspberry Pi.
+	<p class="justified-space">-Ensure that the RFID IC ID Card Reader is securely connected.
+</ul>
+<p class="space"></p>
+
+<p class="justified-space"><b>I2C LCD Display</b>:
+<ul class="custom-bullet">
+  <p class="justified-space">-Connect the SDA pin of the I2C LCD Display to the SDA GPIO pin on the Raspberry Pi.
+ <p class="justified-space">-Connect the SCL pin of the I2C LCD Display to the SCL GPIO pin on the Raspberry Pi.
+ <p class="justified-space">-Connect the 5V pin of the I2C LCD Display to a 5V GPIO pin on the Raspberry Pi.
+<p class="justified-space">-Connect the GND (ground) pin of the I2C LCD Display to a GND GPIO pin on the Raspberry Pi.
+</ul>
+</ul>
+</p>
+
+<p class="space"></p>
+<ul class="custom-bullet">
+<p class="justified-space"><b>Monitor</b>:
+<ul class="custom-bullet">
+<p class="justified-space">If using an external monitor for the Raspberry Pi, connect the monitor to the appropriate port (HDMI, VGA, etc.).
+</ul>
+<p class="space"></p>
+<p class="justified-space"><b>Power On</b>:
+<ul class="custom-bullet">
+
+<p class="justified-space">Once both the RFID IC ID Card Reader and I2C LCD Display are connected, power on the Raspberry Pi.
+</ul>
+</ul>
+</ul>
+<p class="justified-width"><b>4. Software Setup</b>:
+<ul class="custom-bullet">
+<p class="justified-space">To set up the Raspberry Gate software, open the Raspberry Pi terminal and install essential libraries using "pip install pydrive RPLCD." Download the script from the source or repository. Run the system by navigating to the script's directory and executing "python raspberry_gate_script.py" in the terminal. This activates RFID card authentication and attendance logging.
+<p class="space"></p>
+</ul>
+<p class="justified-width"><b>5. Usage</b>:
+<ul class="custom-bullet">
+<p class="justified-space">To log in or out, simply tap your RFID card near the reader. The LCD displays your name, access status, and the time. "Access Granted" confirms successful login, and your attendance is logged. If the card is invalid, "Access Denied" appears.
+<p class="space"></p>
+<p class="justified-space">For attendance export, it happens automatically every 10 minutes to Google Drive. You can also trigger an instant export by tapping the card specified as "export_trigger_card." 
+</ul>
+<p class="space"></p>
+<p class="justified-width"><b>6. Maintenance</b>:
+<p class="space"></p>
+<ul class="custom-bullet">
+<p class="justified-space">To maintain optimal performance, regularly check hardware connections, keep components free from dust, and handle hardware with care. Periodic checks ensure secure connections, cleaning prevents malfunctions due to debris, and gentle handling prolongs the life of the system. 
+<p class="space"></p>
+</ul>
+<p class="justified-width"><b>7. Troubleshooting</b>:
+<ul class="custom-bullet">
+<p class="justified-space">If you encounter "Access Denied," check for a valid RFID card and typos in the card number. For export issues, ensure a stable Raspberry Pi internet connection and verify Google Drive authentication. 
+</ul>
+<<p class="justified-width"><b>8. Conclusion</b>
+<ul class="custom-bullet">
+<p class="justified-space">Congratulations on the successful setup of Raspberry Gate! Your commitment to this process ensures you now possess an efficient smart attendance system. By choosing Raspberry Gate, you've embraced a user-friendly and innovative solution, positioning yourself for accurate and effortless attendance management. 
+</p>
+</ul>
                     </div>
         </section>
             
