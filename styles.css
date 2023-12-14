@@ -1,4 +1,4 @@
-/* Existing code */
+
 
 body {
   font-family: Arial, sans-serif;
@@ -38,7 +38,9 @@ a {
 a:hover {
   color: blue;
 }
-
+.custom-width{
+  width: 80%;
+  margin: 0 auto;
 /* Additional code for preventing text overflow */
 
 .section p {
