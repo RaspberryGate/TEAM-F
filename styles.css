@@ -1,5 +1,4 @@
-
-
+/* Your existing CSS code */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -38,11 +37,28 @@ a {
 a:hover {
   color: blue;
 }
-.custom-width{
+
+.custom-width {
   width: 80%;
   margin: 0 auto;
-/* Additional code for preventing text overflow */
+}
 
+/* Additional styles for the logo placement */
+.top-logo {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+}
+
+.top-logo a {
+  display: inline-block;
+}
+
+.top-logo img {
+  width: 150px; /* Adjust width as needed */
+  height: auto; /* Maintains aspect ratio */
+}
+/* Additional code for preventing text overflow */
 .section p {
   max-width: 100%; /* Limiting text width */
   word-wrap: break-word; /* Allowing word-wrap for long words */
