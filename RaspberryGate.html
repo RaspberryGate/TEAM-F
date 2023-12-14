@@ -139,6 +139,9 @@ li {
     margin: 0; /* Reset any default margin */
     padding: 0; /* Reset any default padding */
 }
+ p {
+      margin-bottom: 40px; /* Adjust this value to create space between paragraphs */
+    }
 }
 
     </style>
@@ -153,7 +156,7 @@ li {
         <ul>
             <li><a href="#section1">About</a></li>
             <li><a href="#section2">Objectives</a></li>
-            <li><a href="#section3">User Documentation</a></li>
+            <li><a href="#section3">Documentation</a></li>
             <li><a href="#section4">Mission</a></li>
             <li><a href="#section5">Vision</a></li>
             <li><a href="#section6">Our Team</a></li>
@@ -174,7 +177,7 @@ li {
             a key role in securing office spaces and ensuring efficient automation.</p>
             <!-- ... (rest of the content) ... -->
         </section>
-
+<div style="height: 200px;"></div>
         <section id="section2">
             <h2>Objectives</h2>
             <p class="justified-width">The research identifies areas for improvement, such as countering unwanted signals and enhancing
@@ -184,10 +187,12 @@ li {
                 and streamline administrative tasks for more efficient and effective office operations.</p>
                     </div>
                     </section>
+<div style="height: 200px;"></div>
         <section id="section3">
-            <h2>Documentation</h2>
-            <p><b>Raspberry Gate User Manual</b></p>
+<div class="header">
+            <h2>User Documentation</h2>
 
+            <p><b>Raspberry Gate User Manual</b></p>
 <p class="justified-width"><b>1. Introduction:</b>
 <ul class="custom-bullet">
 <p class="justified-space">   Welcome to Raspberry Gate, a smart attendance system designed to simplify the process of tracking attendance using RFID cards. This user manual will guide you through the setup, usage, and maintenance of the Raspberry Gate system.</p>
@@ -246,44 +251,46 @@ li {
 </ul>
 <p class="justified-width"><b>4. Software Setup</b>:
 <ul class="custom-bullet">
-<p class="justified-space">To set up the Raspberry Gate software, open the Raspberry Pi terminal and install essential libraries using "pip install pydrive RPLCD." Download the script from the source or repository. Run the system by navigating to the script's directory and executing "python raspberry_gate_script.py" in the terminal. This activates RFID card authentication and attendance logging.
+<p class="justified-space">    To set up the Raspberry Gate software, open the Raspberry Pi terminal and install essential libraries using "pip install pydrive RPLCD." Download the script from the source or repository. Run the system by navigating to the script's directory and executing "python raspberry_gate_script.py" in the terminal. This activates RFID card authentication and attendance logging.
 <p class="space"></p>
 </ul>
 <p class="justified-width"><b>5. Usage</b>:
 <ul class="custom-bullet">
-<p class="justified-space">To log in or out, simply tap your RFID card near the reader. The LCD displays your name, access status, and the time. "Access Granted" confirms successful login, and your attendance is logged. If the card is invalid, "Access Denied" appears.
+<p class="justified-space">     To log in or out, simply tap your RFID card near the reader. The LCD displays your name, access status, and the time. "Access Granted" confirms successful login, and your attendance is logged. If the card is invalid, "Access Denied" appears.
 <p class="space"></p>
-<p class="justified-space">For attendance export, it happens automatically every 10 minutes to Google Drive. You can also trigger an instant export by tapping the card specified as "export_trigger_card." 
+<p class="justified-space">    For attendance export, it happens automatically every 10 minutes to Google Drive. You can also trigger an instant export by tapping the card specified as "export_trigger_card." 
 </ul>
 <p class="space"></p>
 <p class="justified-width"><b>6. Maintenance</b>:
 <p class="space"></p>
 <ul class="custom-bullet">
-<p class="justified-space">To maintain optimal performance, regularly check hardware connections, keep components free from dust, and handle hardware with care. Periodic checks ensure secure connections, cleaning prevents malfunctions due to debris, and gentle handling prolongs the life of the system. 
+<p class="justified-space">    To maintain optimal performance, regularly check hardware connections, keep components free from dust, and handle hardware with care. Periodic checks ensure secure connections, cleaning prevents malfunctions due to debris, and gentle handling prolongs the life of the system. 
 <p class="space"></p>
 </ul>
 <p class="justified-width"><b>7. Troubleshooting</b>:
 <ul class="custom-bullet">
-<p class="justified-space">If you encounter "Access Denied," check for a valid RFID card and typos in the card number. For export issues, ensure a stable Raspberry Pi internet connection and verify Google Drive authentication. 
+<p class="justified-space">    If you encounter "Access Denied," check for a valid RFID card and typos in the card number. For export issues, ensure a stable Raspberry Pi internet connection and verify Google Drive authentication. 
 </ul>
 <<p class="justified-width"><b>8. Conclusion</b>
 <ul class="custom-bullet">
-<p class="justified-space">Congratulations on the successful setup of Raspberry Gate! Your commitment to this process ensures you now possess an efficient smart attendance system. By choosing Raspberry Gate, you've embraced a user-friendly and innovative solution, positioning yourself for accurate and effortless attendance management. 
+<p class="justified-space">    Congratulations on the successful setup of Raspberry Gate! Your commitment to this process ensures you now possess an efficient smart attendance system. By choosing Raspberry Gate, you've embraced a user-friendly and innovative solution, positioning yourself for accurate and effortless attendance management. 
 </p>
 </ul>
-                    </div>
+</div>
         </section>
-            
+            <div style="height: 200px;"></div>
         <section id="section4">
             <h2>Mission</h2>
             <p class="justified-width">Our mission is to harness the versatility of Raspberry Pi to develop cutting-edge security solutions that cater to diverse needs. We strive to empower individuals and organizations with affordable, customizable, and user-friendly security systems. By integrating advanced technology, intuitive interfaces, and robust encryption, we aim to provide reliable and scalable security options that adapt to evolving threats, securing peace of mind for our customers while contributing to a more secure global community.</p>
                     </div>
                     </section>
+<div style="height: 200px;"></div>
                     <section id="section5">
                         <h2>Vision</h2>
                         <p class="justified-width">To revolutionize security solutions by leveraging the power of Raspberry Pi technology, creating a safer world where innovative, accessible, and cost-effective security systems ensure the protection of individuals, homes, and businesses.</p>
                                 </div>
                                 </section>
+<div style="height: 200px;"></div>
                                 <section id="section6">
                                     <h2>Our Team</h2>
                                     <div style="display: flex; justify-content: space-around;">
