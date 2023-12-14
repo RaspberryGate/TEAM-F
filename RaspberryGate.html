@@ -195,32 +195,32 @@ li {
 <p class="space"></p>
 <p class="justified-width"><b>2. Components:</p></b>
 <ul class="custom-bullet">
-<p class="justified-space"><b>Raspberry Pi 3B</b>: The central computing unit that runs the Raspberry Gate script and manages the entire system. It processes data from the RFID card reader, controls the LCD display, and handles attendance logging and exporting.</p>
+<p class="justified-space"><b>a.Raspberry Pi 3B</b>: The central computing unit that runs the Raspberry Gate script and manages the entire system. It processes data from the RFID card reader, controls the LCD display, and handles attendance logging and exporting.</p>
 <p class="space"></p>
-<p class="justified-space"><b>RFID Card Reader</b>: Reads data from RFID (Radio-Frequency Identification) cards. Each card is associated with a unique identifier that is used to authenticate users. When a card is tapped, the RFID card reader sends the card's unique identifier to the Raspberry Pi for processing.</p>
+<p class="justified-space"><b>b.RFID Card Reader</b>: Reads data from RFID (Radio-Frequency Identification) cards. Each card is associated with a unique identifier that is used to authenticate users. When a card is tapped, the RFID card reader sends the card's unique identifier to the Raspberry Pi for processing.</p>
 <p class="space"></p>
-<p class="justified-space"><b>I2C-enabled LCD Display</b>: Provides a visual interface for users and displays relevant information such as user names, access status (granted/denied), and timestamps. It enhances the user experience by communicating real-time interactions and system responses.</p>
+<p class="justified-space"><b>c.I2C-enabled LCD Display</b>: Provides a visual interface for users and displays relevant information such as user names, access status (granted/denied), and timestamps. It enhances the user experience by communicating real-time interactions and system responses.</p>
 <p class="space"></p>
-<p class="justified-space"><b>Internet Connection</b>: Essential for connecting the Raspberry Pi to the internet. The internet connection is crucial for two main purposes: authenticating with Google Drive for attendance export and ensuring the system has accurate timekeeping for timestamping attendance entries.</p>
+<p class="justified-space"><b>d.Internet Connection</b>: Essential for connecting the Raspberry Pi to the internet. The internet connection is crucial for two main purposes: authenticating with Google Drive for attendance export and ensuring the system has accurate timekeeping for timestamping attendance entries.</p>
 <p class="space"></p>
-<p class="justified-space"><b>Google Drive</b>: Used as a cloud storage platform for exporting attendance data. The system utilizes the PyDrive library to authenticate with Google Drive and upload attendance sheets periodically or manually triggered.</p>
+<p class="justified-space"><b>e.Google Drive</b>: Used as a cloud storage platform for exporting attendance data. The system utilizes the PyDrive library to authenticate with Google Drive and upload attendance sheets periodically or manually triggered.</p>
 <p class="space"></p>
-<p class="justified-space"><b>Desktop (File Storage)</b>: The system creates a folder named "Raspberrygate" on the user's desktop (or a specified location) to store exported attendance sheets as text files. This local storage ensures a backup of attendance data in addition to the cloud-based storage on Google Drive.</p>
+<p class="justified-space"><b>f.Desktop (File Storage)</b>: The system creates a folder named "Raspberrygate" on the user's desktop (or a specified location) to store exported attendance sheets as text files. This local storage ensures a backup of attendance data in addition to the cloud-based storage on Google Drive.</p>
 <p class="space"></p>
 </ul>
 <p class="justified-width"><b>3. Assembly</b>:</p>
 <p class="space"></p>
 <ul class="custom-bullet">
-<p class="justified-space"><b>Circuit connection</b>:</p>
+<p class="justified-space"><b>a.Circuit connection</b>:</p>
 <ul class="custom-bullet">
-	<p class="justified-space2"><p class="justified-space"><b>RFID IC ID Card Reader</b>:
+	<p class="justified-space2"><p class="justified-space"><b>i.RFID IC ID Card Reader</b>:
 <ul class="custom-bullet">
 	<p class="justified-space">-Plug the USB connector of the RFID IC ID Card Reader into an available USB port on the Raspberry Pi.
 	<p class="justified-space">-Ensure that the RFID IC ID Card Reader is securely connected.
 </ul>
 <p class="space"></p>
 
-<p class="justified-space"><b>I2C LCD Display</b>:
+<p class="justified-space"><b>ii.I2C LCD Display</b>:
 <ul class="custom-bullet">
   <p class="justified-space">-Connect the SDA pin of the I2C LCD Display to the SDA GPIO pin on the Raspberry Pi.
  <p class="justified-space">-Connect the SCL pin of the I2C LCD Display to the SCL GPIO pin on the Raspberry Pi.
@@ -232,12 +232,12 @@ li {
 
 <p class="space"></p>
 <ul class="custom-bullet">
-<p class="justified-space"><b>Monitor</b>:
+<p class="justified-space"><b>iii.Monitor</b>:
 <ul class="custom-bullet">
 <p class="justified-space">If using an external monitor for the Raspberry Pi, connect the monitor to the appropriate port (HDMI, VGA, etc.).
 </ul>
 <p class="space"></p>
-<p class="justified-space"><b>Power On</b>:
+<p class="justified-space"><b>iiii.Power On</b>:
 <ul class="custom-bullet">
 
 <p class="justified-space">Once both the RFID IC ID Card Reader and I2C LCD Display are connected, power on the Raspberry Pi.
